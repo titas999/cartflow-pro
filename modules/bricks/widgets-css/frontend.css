@@ -1,0 +1,71 @@
+/* CSS for Offer Dynamic Content */
+.brxe-bricks-cf-upsell-layout .brx-nestable-children,
+.brxe-bricks-cf-upsell-layout.brx-nestable-children-placeholder {
+	display: block !important;
+}
+
+.cartflows-bricks-offer-product-image ol.flex-control-nav.flex-control-thumbs,
+.cartflows-pro-bricks__offer-product-image ol.flex-control-nav.flex-control-thumbs {
+	display: inline-block;
+	margin-top: 5%;
+}
+
+/* CSS for Offer Product Price module */
+.cartflows-pro-bricks__offer-product-price .wcf-offer-price .wcf-offer-price-inner {
+	display: block !important;
+}
+
+.cartflows-bricks-offer-product-quantity .wcf-offer-product-quantity .quantity span.action.minus,
+.cartflows-pro-bricks__offer-product-quantity .wcf-offer-product-quantity .quantity span.action.minus {
+	display: none;
+}
+.cartflows-bricks-offer-product-quantity .wcf-offer-product-quantity .quantity span.action.plus,
+.cartflows-pro-bricks__offer-product-quantity .wcf-offer-product-quantity .quantity span.action.plus {
+	display: none;
+}
+.cartflows-bricks-offer-product-variations form.cart table.variations tr,
+form.woocommerce-cart-form table.variations tr {
+	border-bottom: 0;
+}
+.cartflows-bricks-offer-product-quantity .wcf-embeded-product-quantity-wrap .quantity input[type="number"],
+.cartflows-bricks-offer-product-quantity .wcf-embeded-product-variation-wrap .variations_form .variations select {
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid;
+	border-color: #d4d4d4;
+	border-radius: 0;
+	box-shadow: inset 0 -1em 0.7em 0 rgba( 0, 0, 0, 0.01 );
+	display: inline-block;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: 14px;
+	height: auto;
+	line-height: 1.42857143 !important;
+	min-height: 34px;
+	outline: none;
+	padding: 10px 15px;
+	max-width: 100%;
+	/* min-width: 85%; */
+	width: 100%;
+	margin-right: 0;
+	-webkit-appearance: none;
+}
+
+.cartflows-bricks-offer-product-variations .wcf-embeded-product-variation-wrap .variations_form .variations .reset_variations {
+	text-decoration: none;
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 10px;
+	float: right;
+	margin-top: 10px;
+	color: #a00a00;
+	letter-spacing: 0.5px;
+	display: none;
+	text-transform: capitalize;
+}
+
+.cartflows-bricks-offer-product-image .woocommerce-product-gallery,
+.cartflows-pro-bricks__offer-product-image .woocommerce-product-gallery {
+	display: block !important;
+	width: 100%;
+}

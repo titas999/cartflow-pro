@@ -1,0 +1,476 @@
+/* Default CSS Vars */
+.wcf-instant-offer {
+	--wcf-offer-primary-color: #111; /* Used. */
+	--wcf-offer-primary-font-family: inherit; /* Used. */
+	--wcf-offer-heading-color: var( --wcf-offer-primary-color ); /* Used. */
+	--wcf-offer-heading-font-weight: 700; /* Used. */
+	--wcf-offer-text-font-weight: 400; /* Used. */
+
+	--wcf-section-border-color: #dedede; /* Used. */
+	--wcf-instant-offer-left-side-bg-color: #fff; /* Used. */
+	--wcf-instant-offer-right-side-bg-color: #f7f7f9; /* Used. */
+
+	--wcf-heading-font-family: var( --wcf-offer-primary-font-family ); /* Used. */
+	--wcf-heading-text-color: var( --wcf-offer-primary-color ); /* Used. */
+	--wcf-heading-font-weight: var( --wcf-offer-heading-font-weight ); /* Used. */
+
+	--wcf-sub-heading-color: var( --wcf-offer-heading-color ); /* Used. */
+	--wcf-sub-heading-font-weight: var( --wcf-offer-text-font-weight ); /* Used. */
+	--wcf-sub-heading-font-family: var( --wcf-heading-font-family ); /* Used. */
+
+	--wcf-product-title-color: var( --wcf-offer-primary-color ); /* Used. */
+	--wcf-product-title-font-weight: 600; /* Used. */
+	--wcf-product-title-font-family: var( --wcf-offer-primary-font-family ); /* Used. */
+
+	--wcf-product-price-color: var( --wcf-offer-heading-color ); /* Used. */
+	--wcf-product-price-font-weight: 500; /* Used. */
+	--wcf-product-price-font-family: var( --wcf-offer-primary-font-family ); /* Used. */
+
+	--wcf-product-description-color: #3c434a; /* Used. */
+	--wcf-product-description-font-weight: var( --wcf-offer-text-font-weight ); /* Used. */
+	--wcf-product-description-font-family: var( --wcf-offer-primary-font-family ); /* Used. */
+
+	--wcf-product-quantity-field-text-color: var( --wcf-product-description-color ); /* Used. */
+	--wcf-product-quantity-field-bg-color: #fff; /* Used. */
+	--wcf-product-quantity-field-border-color: var( --wcf-section-border-color ); /* Used. */
+
+	--wcf-product-variations-dropdown-text-color: var( --wcf-product-description-color ); /* Used. */
+	--wcf-product-variations-dropdown-bg-color: #fff; /* Used. */
+	--wcf-product-variations-dropdown-border-color: var( --wcf-section-border-color ); /* Used. */
+
+	--wcf-accept-offer-button-color: #fff; /* Used. */
+	--wcf-accept-offer-button-font-size: "16px"; /* Used. */
+	--wcf-accept-offer-button-font-family: var( --wcf-offer-primary-font-family ); /* Used. */
+	--wcf-accept-offer-button-bg-color: var( --wcf-offer-primary-color ); /* Used. */
+	--wcf-accept-offer-button-font-weight: 600; /* Used. */
+
+	--wcf-reject-offer-link-color: #9ca3af; /* Used. */
+	--wcf-reject-offer-link-hover-color: #9ca3af; /* Used. */
+	--wcf-reject-offer-link-font-family: var( --wcf-accept-offer-button-font-family ); /* Used. */
+}
+
+/* Default border. */
+body.cartflows-instant-checkout #ast-scroll-top {
+	display: none;
+}
+body.cartflows-instant-checkout .main-header--wrapper {
+	border-bottom: 1px solid #dedede;
+	-js-display: flex;
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+}
+body.cartflows-instant-checkout .main-header--content {
+	max-width: 1140px;
+	width: 100%;
+	/* margin: 0; */
+	padding: 0.704rem 0;
+	align-items: center;
+	/* justify-content: space-between; */
+	display: grid;
+	grid-template-columns: minmax( min-content, calc( 50% + calc( calc( 60rem - 52rem ) / 2 ) ) ) 1fr;
+}
+
+body.cartflows-instant-checkout .main-header--content .main-header--site-title {
+	font-size: 21px;
+	font-weight: 500;
+	text-transform: capitalize;
+	margin: 8px 0;
+}
+
+.cartflows-instant-checkout .woocommerce-offer-layout {
+	background-color: #f5f5f5 !important;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container {
+	display: grid;
+	width: 100%;
+	height: 100vh;
+	grid-template-columns: minmax( min-content, calc( 50% + calc( calc( 60rem - 52rem ) / 2 ) ) ) 1fr;
+}
+.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-left-column {
+	-js-display: flex;
+	display: flex;
+	background-color: var( --wcf-instant-offer-left-side-bg-color );
+	justify-content: flex-end;
+	align-items: flex-start;
+	block-size: 100%;
+	width: 100%;
+	padding: 0;
+	border-right: 1px solid var( --wcf-section-border-color );
+}
+.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-right-column {
+	-js-display: flex;
+	display: flex;
+	background-color: var( --wcf-instant-offer-right-side-bg-color );
+	justify-content: flex-start;
+	block-size: 100%;
+	width: 100%;
+	padding: 0;
+}
+.cartflows-instant-checkout .wcf-instant-offer .wcf-product-image {
+	-js-display: flex;
+	display: flex;
+	width: 42rem;
+	padding: 5rem 5rem 5rem 4rem;
+	margin-right: 0.75rem;
+}
+.cartflows-instant-checkout .wcf-instant-offer .wcf-product-image .slides {
+	margin: 0;
+}
+.cartflows-instant-checkout .wcf-instant-offer .wcf-product-image .flex-control-thumbs {
+	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat( 5, 1fr );
+	gap: 12px;
+}
+.cartflows-instant-checkout .wcf-instant-offer .wcf-product-image .flex-control-thumbs li {
+	width: 100% !important;
+	margin: 0;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container .wcf-ic-layout-right-column .wcf-ic-ty-product-details {
+	max-width: 55rem;
+	padding: 5rem;
+	-js-display: flex;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container .wcf-ic-heading {
+	float: none;
+	margin: 0 0 20px 0;
+	font-size: 36px;
+	font-family: var( --wcf-heading-font-family );
+	color: var( --wcf-heading-text-color );
+	font-weight: var( --wcf-heading-font-weight );
+	line-height: 44px;
+	letter-spacing: -1px;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container .wcf-ic-sub-heading {
+	float: none;
+	margin: 0;
+	line-height: 30px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: var( --wcf-sub-heading-font-family );
+	font-weight: var( --wcf-sub-heading-font-weight );
+	color: var( --wcf-sub-heading-color );
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container .wcf-ic-product-title {
+	float: none;
+	margin: 0;
+	margin: 20px 0 20px 0;
+	font-size: 24px;
+	font-family: var( --wcf-product-title-font-family );
+	font-weight: var( --wcf-product-title-font-weight );
+	color: var( --wcf-product-title-color );
+	line-height: 32px;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .variations select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding-right: 30px;
+	cursor: pointer;
+	background-image: url( "data:image/svg+xml,%3Csvg class='wcf-arrow-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='10px' height='6px' fill='%236B7280' viewBox='57 35.171 26 16.043' enable-background='new 57 35.171 26 16.043' xml:space='preserve' %3E%3Cpath d='M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z'%3E%3C/path%3E%3C/svg%3E" );
+	background-repeat: no-repeat;
+	background-position: right 10px top 50%;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-embeded-product-variation-wrap table tbody tr {
+	margin-bottom: 5px;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .quantity .input-text.qty.text,
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .quantity .input-text.qty.text::placeholder {
+	color: var( --wcf-product-quantity-field-text-color );
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .variations select:first-child {
+	color: var( --wcf-product-variations-dropdown-text-color );
+	font-weight: 500;
+	font-size: 16px;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .variations label,
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .quantity label {
+	display: none;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-ic-product-variations,
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-embeded-product-variation-wrap table,
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-embeded-product-quantity-wrap .quantity input[type="number"] {
+	max-width: 100%;
+	width: 100%;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-embeded-product-variation-wrap .variations_form .variations select {
+	box-shadow: 0 1px 2px 0 #0000000d;
+	border-radius: 6px;
+	font-family: var( --wcf-product-description-font-family );
+	background-color: var( --wcf-product-variations-dropdown-bg-color );
+	border-color: var( --wcf-product-variations-dropdown-border-color );
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-embeded-product-quantity-wrap .quantity input[type="number"] {
+	box-shadow: 0 1px 2px 0 #0000000d;
+	border-radius: 6px;
+	background-color: var( --wcf-product-quantity-field-bg-color );
+	border-color: var( --wcf-product-quantity-field-border-color );
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout span.wcf-ic-product-price {
+	margin-bottom: 20px;
+	display: inline-block;
+	font-family: var( --wcf-product-price-font-family );
+	font-weight: var( --wcf-product-price-font-weight );
+	color: var( --wcf-product-price-color );
+	line-height: 32px;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-offer-price .wcf-regular-price.del {
+	padding-right: 17px;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-offer-price {
+	font-size: 24px;
+}
+.cartflows-instant-checkout .wcf-instant-offer .variations_form .single_variation_wrap .woocommerce-variation-description,
+.cartflows-instant-checkout .wcf-instant-offer .variations_form .single_variation_wrap .woocommerce-variation-price {
+	display: none !important;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-ic-product-quantity {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-embeded-product-variation-wrap .variations_form .variations .reset_variations {
+	margin: 5px 0 8px 0;
+}
+.cartflows-instant-checkout .wcf-instant-offer .quantity input[type="number"],
+.cartflows-instant-checkout .wcf-instant-offer .variations select {
+	font-size: 16px;
+	font-weight: 500;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .wcf-ic-offer-accept {
+	width: 100%;
+	display: inline-block;
+	margin: 33px 0 12px;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .cartflows-pro-offer-yes-no-button-wrap a {
+	color: var( --wcf-accept-offer-button-color );
+	display: block;
+	font-size: var( --wcf-accept-offer-button-font-size );
+	font-weight: var( --wcf-accept-offer-button-font-weight );
+	font-family: var( --wcf-accept-offer-button-font-family );
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid var( --wcf-accept-offer-button-bg-color );
+	background-color: var( --wcf-accept-offer-button-bg-color );
+	max-width: 320px;
+	padding: 14px 34px;
+	border-radius: 6px;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .cartflows-pro-offer-yes-no-button-wrap a:hover {
+	background-color: color-mix( in sRGB, var( --wcf-accept-offer-button-bg-color ) 80%, transparent );
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .cartflows-pro-offer-yes-no-inner-wrap {
+	justify-content: center;
+	-js-display: flex;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .cartflows-pro-offer-yes-no-button-icon-wrap::before {
+	color: var( --wcf-accept-offer-button-color );
+	content: "\e902";
+	font-family: cartflows-icon;
+	font-weight: 100;
+	font-size: var( --wcf-accept-offer-button-font-size );
+}
+
+.cartflows-instant-checkout .wcf-instant-offer a.cartflows-pro-offer-yes-no-link-text-wrap {
+	color: var( --wcf-reject-offer-link-color );
+	display: block;
+	font-family: var( --wcf-reject-offer-link-font-family );
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.cartflows-instant-checkout .wcf-instant-offer a.cartflows-pro-offer-yes-no-link-text-wrap:hover {
+	color: color-mix( in sRGB, var( --wcf-reject-offer-link-color ) 80%, transparent );
+}
+.cartflows-instant-checkout .wcf-instant-offer .cartflows-pro-offer-yes-no-link {
+	margin-top: 8px;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout p.wcf-ic-product-description:not( :empty ) {
+	color: var( --wcf-product-description-color );
+	font-weight: var( --wcf-product-description-font-weight );
+	font-family: var( --wcf-product-description-font-family );
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout p.wcf-ic-product-description:empty {
+	display: none;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .woocommerce-product-gallery .woocommerce-product-gallery__image a {
+	pointer-events: none;
+}
+
+.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .woocommerce-product-gallery img {
+	border: 1px solid #d1d5db;
+	border-radius: 6px;
+	width: 100%;
+}
+
+/* Modible devices and some smaller tablets */
+@media only screen and ( max-width: 820px ) {
+	.wcf-empty-cart-notice-block {
+		padding: 0.704rem 1.5rem;
+	}
+	.wcf-empty-cart-message-container {
+		padding: 30px;
+	}
+
+	body.cartflows-instant-checkout .main-header--content {
+		padding: 0.704rem 20px;
+	}
+
+	.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container {
+		display: block;
+		width: 100%;
+		height: auto;
+		block-size: auto;
+		gap: 30px;
+	}
+	.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-left-column {
+		display: block;
+		border: none;
+		width: 100% !important;
+		padding: 30px 20px 20px 20px;
+	}
+	.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-right-column {
+		display: block;
+		min-height: 100%;
+		padding: 20px 20px 40px 20px;
+	}
+	.cartflows-instant-checkout .wcf-instant-offer .wcf-product-image {
+		display: block;
+		width: 100%;
+		border: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container .wcf-ic-layout-right-column .wcf-ic-ty-product-details {
+		max-width: 100%;
+	}
+}
+
+@media only screen and ( max-width: 480px ) {
+	.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container .wcf-ic-layout-right-column .wcf-ic-ty-product-details {
+		padding: 0;
+	}
+
+	.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container .wcf-ic-heading {
+		font-size: 36px;
+		line-height: 46px;
+	}
+	.cartflows-instant-checkout .wcf-instant-offer .wcf-ic-layout-container .wcf-ic-sub-heading {
+		font-size: 22px;
+		line-height: 32px;
+	}
+	.cartflows-instant-checkout .wcf-instant-offer .woocommerce-offer-layout .cartflows-pro-offer-yes-no-button-wrap a {
+		max-width: 100%;
+	}
+	.cartflows-instant-checkout .wcf-instant-offer .cartflows-pro-offer-yes-no-link {
+		display: block;
+		width: 100%;
+	}
+	.cartflows-instant-checkout .wcf-instant-offer a.cartflows-pro-offer-yes-no-link-text-wrap {
+		text-align: center;
+	}
+}
+
+/* Empty Cart Block design*/
+
+.wcf-empty-cart-notice-block {
+	margin-top: 2rem;
+}
+.wcf-empty-cart-message-container {
+	max-width: 1140px;
+	width: 100%;
+	border: 1px solid #d1d5db;
+	border-radius: 16px;
+	margin: 0 auto;
+	padding: 40px;
+}
+.wcf-empty-cart-message-container .wcf-empty-cart-wrapper {
+	-js-display: flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 20px;
+}
+.wcf-empty-cart-message-container .wcf-empty-cart-content .wcf-empty-cart-heading,
+.wcf-empty-cart-message-container .wcf-empty-cart-content .wcf-empty-cart-message,
+.wcf-empty-cart-message-container .wcf-empty-cart-content .wcf-empty-cart-button {
+	display: block;
+	margin: 0 0 0 0;
+}
+
+.wcf-empty-cart-message-container .wcf-empty-cart-content .wcf-empty-cart-heading {
+	color: #1f2937;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 6px;
+}
+
+.wcf-empty-cart-message-container .wcf-empty-cart-content .wcf-empty-cart-message {
+	color: #6b7280;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.wcf-empty-cart-message-container .wcf-empty-cart-content .wcf-empty-cart-button {
+	background-color: #111;
+	color: #fff;
+	padding: 9px 17px 9px 17px;
+	border-radius: 6px;
+	width: -moz-fit-content;
+	width: fit-content;
+	justify-content: center;
+	margin: 15px auto 0 auto;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.wcf-empty-cart-message-container .wcf-empty-cart-content .wcf-empty-cart-button:hover {
+	background-color: color-mix( in sRGB, #111 80%, transparent );
+}
+
+.wcf-empty-cart-message-container .wcf-empty-cart-icon {
+	background: #fff;
+	border-radius: 50px;
+	-js-display: flex;
+	display: flex;
+	align-items: center;
+	padding: 16px;
+}
+.wcf-empty-cart-message-container .wcf-empty-cart-icon svg {
+	height: 35px;
+	width: 35px;
+	color: var( --wcf-primary-color );
+}
+/* Empty Cart Block design*/
